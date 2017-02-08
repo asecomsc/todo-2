@@ -1,0 +1,11 @@
+#checkboxes ul {
+  margin: 0;
+  list-style: none;
+  float: left;
+}
+body {
+    background-color: #3c6dc5;
+    color: white;
+    font-family: helvetica;
+}
+.strike{text-decoration: line-through;}
