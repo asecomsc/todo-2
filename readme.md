@@ -1,5 +1,8 @@
+##2017-02-10  v02
+* redesign ui.
+
 ##2017-02-08  v01
-# jquery only
+* jquery only
 
 #OBJETIVO DE WEB-APP
 1. jquery front-end ( develop mayormente en jsfiddle )
