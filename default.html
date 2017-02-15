@@ -1,14 +1,22 @@
 <body>
  <div id="container" >
 	<link rel="stylesheet" type="text/css" href="todo.css">
-    <h1>jQuery Todo</h1>
+    <h1>Todo</h1>
     <form>
-        <input class="input" type="text" placeholder="Nuevo...">
+        <input type="text" placeholder="Nuevo..." id="task">
     </form>
     <p></p>
     <ul></ul>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
     <script src="todo.js"></script>
+ </div>
+ <div id="miTimer">
+	<h2>Aviso</h2>
+	<form>
+		<input type="text" placeholder="min" id="min" size="1">&#160;
+		<input type="text" placeholder="Mensaje..." id="aviso" size="20">
+		<button>Iniciar</button>
+	</form>
  </div>
 </body>

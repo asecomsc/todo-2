@@ -1,3 +1,6 @@
+##2017-02-15  v03
+* new: aviso con timer, el codigo mas simple y facil para un timer en jquery.
+
 ##2017-02-10  v02
 * redesign ui.
 
