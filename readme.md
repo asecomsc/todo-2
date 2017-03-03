@@ -1,3 +1,6 @@
+##2017-03-02  v04
+* new: crono, start/stop/reset
+
 ##2017-02-15  v03
 * new: aviso con timer, el codigo mas simple y facil para un timer en jquery.
 

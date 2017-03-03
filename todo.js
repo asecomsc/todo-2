@@ -1,4 +1,10 @@
-$(document).ready(function($) {
+
+
+$(document).ready(function() {
+	d = new Date();
+	d.setHours(0,0,0,0);
+	var miInterval;
+	
     $('form').submit(function() {
         if ($('#task').val() !== '') {
             var newTask = $('#task').val();
@@ -19,4 +25,21 @@ $(document).ready(function($) {
 		}
     });
     $('ul').sortable(); // Because what good is a to-do list that you can't sort? :)
+	
+	$('#start').click( function() { 
+		miInterval = setInterval(miTimer,1000);
+	});
+	function miTimer() {
+	    d.setSeconds(d.getSeconds()+1);
+	    $('#uno').text(d.format("HH:MM:ss"));
+	}
+	$('#stop').click( function() {
+		clearInterval(miInterval);
+	});
+	$('#reset').click( function() {
+		clearInterval(miInterval);
+		d.setHours(0,0,0,0);
+		miInterval = setInterval(miTimer,1000);		
+	});	
 });
+
