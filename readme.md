@@ -1,13 +1,16 @@
-##2017-03-02  v04
+## 2017-03-18  v05
+* link <Update> jquery trasversing <li>
+
+## 2017-03-02  v04
 * new: crono, start/stop/reset
 
-##2017-02-15  v03
+## 2017-02-15  v03
 * new: aviso con timer, el codigo mas simple y facil para un timer en jquery.
 
-##2017-02-10  v02
+## 2017-02-10  v02
 * redesign ui.
 
-##2017-02-08  v01
+## 017-02-08  v01
 * jquery only
 
 #OBJETIVO DE WEB-APP

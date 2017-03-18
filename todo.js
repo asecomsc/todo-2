@@ -1,4 +1,8 @@
-
+function doSomething() {
+    $("li").each(function(){
+        alert($(this).text())
+    });
+}
 
 $(document).ready(function() {
 	d = new Date();
