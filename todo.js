@@ -1,13 +1,31 @@
-function doSomething() {
-    $("li").each(function(){
-        alert($(this).text())
-    });
+function Grabar() {
+	localStorage.clear();
+	i = 0;
+	$("input:checkbox").each(function(){
+		if ($(this).prop("checked")==false) {
+			i++;
+			localStorage.setItem('test'+ i, $(this).closest('li').text());
+		}
+	});
+}
+
+function Leer() {
+	for(var i in localStorage)
+	{
+		var newTask = localStorage[i];
+		var newLi = $('<li><input type="checkbox">&#160;&#160;' + newTask + '</li>');
+		newLi.on('click', function() {
+				$(this).toggleClass('strike').fadeOut('slow');
+		});
+		$('ul').append(newLi); 
+	}	
 }
 
 $(document).ready(function() {
 	d = new Date();
 	d.setHours(0,0,0,0);
 	var miInterval;
+	Leer();
 	
     $('form').submit(function() {
         if ($('#task').val() !== '') {
